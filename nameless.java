@@ -5,12 +5,8 @@ Richard L. Clarke
 1. Prompt player to enter their name
 Confirm with y/n
 At any time during the program when the user enters inaccurate input:
-If incorrect choice is selected, re-display
-I didn’t catch that. RE-DISPLAY
-If incorrect choice is selected again, re-display
-I still didn’t catch that. RE-DISPLAY
-If incorrect choice is selected again, end program
-I didn’t catch that. Try running the game again!
+If incorrect choice is selected, display twice before exiting
+
 Display Stage 1: Awakening You awaken in your bed. It's Monday. The time is 6am and you have to be at work at 9. What's the move?'
 Prompt user to select a choice
 (1) Pray 
@@ -83,11 +79,36 @@ public class nameless{
 		System.out.print(name + ", huh? Y/N\t\t");
 		input = read.nextLine();
 
-			//Confirm with y/n
+			/*
+				Confirm with y/n
+				At any time during the program when the user enters inaccurate input:
+					If incorrect choice is selected, display twice before exiting
+			*/
+
 			if(input.equals("Y") || input.equals("y"))
 				System.out.println("Okay!");
-			else
-				System.out.println("Nope");
+			else if(input.equals("N") || input.equals("n"))
+				System.out.println("Okay. Well, learn your name and run the program again. BYE");
+			else{
+				System.out.println("I didn’t catch that.");
+				System.out.print(name + ", huh? Y/N\t\t");
+				input = read.nextLine();
+			}
+			//Second Check
+			if(input.equals("Y") || input.equals("y"))
+				System.out.println("Okay!");
+			else if(input.equals("N") || input.equals("n"))
+				System.out.println("Okay. Well, learn your name and run the program again. BYE");
+			else{
+				System.out.println("I STILL didn’t catch that.");
+				System.out.print(name + ", huh? Y/N\t\t");
+				input = read.nextLine();
+			}
+			//Final Check
+			if(input.equals("Y") || input.equals("y"))
+				System.out.println("Okay!");
+			else 
+				System.out.println("Okay. Well, learn your name and run the program again. BYE");
 
 
 	}

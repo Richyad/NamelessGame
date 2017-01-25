@@ -74,11 +74,21 @@ public class nameless{
 	public static void main(String[] args){
 		
 		Scanner read = new Scanner(System.in);
-		//1. Prompt player to enter their name
 		String name = "";
+		String input = "";
+
+		//1. Prompt player to enter their name
 		System.out.print("Please enter your name: ");
 		name = read.nextLine();
-		System.out.print(name);
+		System.out.print(name + ", huh? Y/N\t\t");
+		input = read.nextLine();
+
+			//Confirm with y/n
+			if(input.equals("Y") || input.equals("y"))
+				System.out.println("Okay!");
+			else
+				System.out.println("Nope");
+
 
 	}
 }

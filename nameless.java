@@ -9,13 +9,9 @@ If incorrect choice is selected, display twice before exiting
 2. Display Stage 1: Awakening and prompt user to select a choice
 (1) Pray 
 (2) Poop
-
-Push 
-If only you waited a little longer! The Ben & Jerry's you had before bed propels the giant stool right to the exit of your booty, scraping your rectum on the way out. A blood coated turd slides out painfully. The doo doo demons, pleased with your blood oath, vow to watch over you today. But you must accept their guidance!
-Accept 
-This is the shit you asked for
-Decline
-Good job. No such thing as doo doo demons. But you've unlocked a bonus. Just finish the game and claim your prize!
+	(2a) Push 
+		(2a.I) Accept 
+		(2a.II) Decline
 Wait
 It takes a while. In the meantime, you jump on twitter to look for saggy breast photos. An article appears on your feed about the Dangers of DooDoo Demons. As the poop approaches its birth you…
 Hold it

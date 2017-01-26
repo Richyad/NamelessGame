@@ -6,9 +6,7 @@ Richard L. Clarke
 Confirm with y/n
 At any time during the program when the user enters inaccurate input:
 If incorrect choice is selected, display twice before exiting
-
-Display Stage 1: Awakening You awaken in your bed. It's Monday. The time is 6am and you have to be at work at 9. What's the move?'
-Prompt user to select a choice
+2. Display Stage 1: Awakening and prompt user to select a choice
 (1) Pray 
 You sit up and kneel facing your window as you pray for positivity and peace for the day. Should've prayed for a strategy guide to this game instead...
 (2) Poop
@@ -110,6 +108,47 @@ public class nameless{
 			else 
 				System.out.println("Okay. Well, learn your name and run the program again. BYE");
 
+		//Display Stage 1: Awakening and prompt the user to select a choice
+		System.out.println("You awaken in your bed. It's Monday. The time is 6am and you have to be at work at 9." +
+						   " What's the move?");
+		System.out.println("(1) Pray\t(2) Poop\t(3) Play game"); 
+		input = read.nextLine();
+			if(input.equals("1")){
+				System.out.println("You sit up and kneel facing your window as you pray for positivity and peace " +
+								   "for the day. Should've prayed for a strategy guide to this game instead...");
+			}
+		
+			else if(input.equals("2")){
+				System.out.println("You slide out of bed and saunter to the porcelain throne where you make " +
+								   "your daily deposit to the doo doo demons.\nUnforunately, your body is still " +
+								   "waking up so it's gonna be a while.\nINSERT A PAUSE HERE But we have places " +
+								   "to be and things to see! You decide to...");
+			}
+/*
+Push 
+If only you waited a little longer! The Ben & Jerry's you had before bed propels the giant stool right to the exit of your booty, scraping your rectum on the way out. A blood coated turd slides out painfully. The doo doo demons, pleased with your blood oath, vow to watch over you today. But you must accept their guidance!
+Accept 
+This is the shit you asked for
+Decline
+Good job. No such thing as doo doo demons. But you've unlocked a bonus. Just finish the game and claim your prize!
+Wait
+It takes a while. In the meantime, you jump on twitter to look for saggy breast photos. An article appears on your feed about the Dangers of DooDoo Demons. As the poop approaches its birth you…
+Hold it
+As you read on, you learn about a spy program invented by the StoolHessAyT to collect blood samples from stool for creating evil clones.
+Release
+The poop slides out and into the doo doo receptacle that will carry it to its watery grave.
+
+You climb out of bed and rush to the living room to play Street Fighter III 3rd Strike. You pick…
+(N) Elena
+(N) Necro
+(N) Akuma
+Ah, the nimble, ashy, and powerful Necro. An undefeatable choice! (press any key)
+After getting rolled around by the Japanese players crowding the servers at this time of morning, you decide to play your Trump card and pee on your router. Doesn't really count as a rage quit, does it?
+Secret option: Capcom = Ken
+Kakkate kina! Those rough feet aren’t just for show. You sweep five people back to back before triumphantly returning to your morning routine. Great job!
+After this thrilling start to the day, you decide to continue this streak of pampering. That's when you get up and:
+
+*/
 
 	}
 }

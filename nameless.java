@@ -6,16 +6,16 @@ Richard L. Clarke
 Confirm with y/n
 At any time during the program when the user enters inaccurate input:
 If incorrect choice is selected, display twice before exiting
+--------------------------------------------------------------------------------------------------------------------------------------------
 2. Display Stage 1: Awakening and prompt user to select a choice
 (1) Pray 
 (2) Poop
 	(2a) Push 
 		(2a.I) Accept 
 		(2a.II) Decline
-Wait
-It takes a while. In the meantime, you jump on twitter to look for saggy breast photos. An article appears on your feed about the Dangers of DooDoo Demons. As the poop approaches its birth you…
-Hold it
-As you read on, you learn about a spy program invented by the StoolHessAyT to collect blood samples from stool for creating evil clones.
+	(2b)Wait
+		(2b.I) Hold it
+
 Release
 The poop slides out and into the doo doo receptacle that will carry it to its watery grave.
 (3) Play game
@@ -158,15 +158,28 @@ public class nameless{
 							else if((input.equals("D") || input.equals("d")))
 								System.out.println("Good job. No such thing as doo doo demons.\n" +
 												   "But you've unlocked a bonus. Just finish the game and claim your prize!");
+							else
+								System.out.println("Wrong input. Run the program again. BYE");
+
 					}
+					//(2b)Wait
+						else if(input.equals("W") || input.equals("w")){
+							System.out.print("It takes a while. In the meantime, you jump on twitter to look\n" +
+												"for saggy breast photos. An article appears on your feed about\n" +
+												"the Dangers of DooDoo Demons.\nAs the poop approaches its birth you…\t(H) HOLD IT!\t(R)Relax...and release\t");
+							input = read.nextLine();
+								
+								//(2b.I) Hold it
+								System.out.println("As you read on, you learn about a spy program invented by the StoolHessAyT to\n" +
+												   "collect blood samples from stool for creating evil clones.");
+
+						}
+							
 				
 
 			}
 /*
-Wait
-It takes a while. In the meantime, you jump on twitter to look for saggy breast photos. An article appears on your feed about the Dangers of DooDoo Demons. As the poop approaches its birth you…
-Hold it
-As you read on, you learn about a spy program invented by the StoolHessAyT to collect blood samples from stool for creating evil clones.
+
 Release
 The poop slides out and into the doo doo receptacle that will carry it to its watery grave.
 

@@ -5,7 +5,8 @@ Richard L. Clarke
 1. Prompt player to enter their name
 Confirm with y/n
 At any time during the program when the user enters inaccurate input:
-If incorrect choice is selected, display twice before exiting
+In the intro, if incorrect choice is selected, display twice before exiting
+Everywhere else, display a message before exiting the program
 --------------------------------------------------------------------------------------------------------------------------------------------
 2. Display Stage 1: Awakening and prompt user to select a choice
 (1) Pray 
@@ -15,9 +16,8 @@ If incorrect choice is selected, display twice before exiting
 		(2a.II) Decline
 	(2b)Wait
 		(2b.I) Hold it
+		(2b/II) Release
 
-Release
-The poop slides out and into the doo doo receptacle that will carry it to its watery grave.
 (3) Play game
 You climb out of bed and rush to the living room to play Street Fighter III 3rd Strike. You pick…
 (N) Elena
@@ -168,10 +168,17 @@ public class nameless{
 												"for saggy breast photos. An article appears on your feed about\n" +
 												"the Dangers of DooDoo Demons.\nAs the poop approaches its birth you…\t(H) HOLD IT!\t(R)Relax...and release\t");
 							input = read.nextLine();
-								
+											
+
 								//(2b.I) Hold it
-								System.out.println("As you read on, you learn about a spy program invented by the StoolHessAyT to\n" +
-												   "collect blood samples from stool for creating evil clones.");
+								if(input.equals("H") || input.equals("h")){
+										System.out.println("As you read on, you learn about a spy program invented by the StoolHessAyT to\n" +
+														   "collect blood samples from stool for creating evil clones.");
+								}
+								//(2b.II) Release
+								else if(input.equals("R") || input.equals("r"))
+								System.out.println("The poop slides out and into the doo doo receptacle that\n" +
+												   "will carry it to its watery grave.");
 
 						}
 							
@@ -179,9 +186,6 @@ public class nameless{
 
 			}
 /*
-
-Release
-The poop slides out and into the doo doo receptacle that will carry it to its watery grave.
 
 You climb out of bed and rush to the living room to play Street Fighter III 3rd Strike. You pick…
 (N) Elena

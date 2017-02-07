@@ -19,10 +19,8 @@ Everywhere else, display a message before exiting the program
 		(2b/II) Release
 	(3)Play game
 		(3a)Necro
+		(3b)Ken
 
-
-Secret option: Capcom = Ken
-Kakkate kina! Those rough feet aren’t just for show. You sweep five people back to back before triumphantly returning to your morning routine. Great job!
 After this thrilling start to the day, you decide to continue this streak of pampering. That's when you get up and:
 (M) Make pancakes
 You fire up the stove and proceed to create a delicious display of gluttonous glory.. A stack of seven pancakes, fried chicken, three bananas, a bowl of lucky charms, and a hot cup of tea to top it all off.
@@ -198,7 +196,7 @@ public class nameless{
 									   "\n\ndoes it?");
 				//(3b)Secret Option : Capcom = Ken
 				else if (input.equals("Capcom") || input.equals("capcom"))
-					System.out.println("Kakkate kina! Those rough feet aren\’t just for show!\n" +
+					System.out.println("Kakkate kina! Those rough feet aren\'t just for show!\n" +
 									   "You sweep five people back to back before triumphantly\n" +
 									   "returning to your morning routine. Great job!\n" +
 									   "After this thrilling start to the  day, you decide\n"+ 

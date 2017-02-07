@@ -17,14 +17,10 @@ Everywhere else, display a message before exiting the program
 	(2b)Wait
 		(2b.I) Hold it
 		(2b/II) Release
+	(3)Play game
+		(3a)Necro
 
-(3) Play game
-You climb out of bed and rush to the living room to play Street Fighter III 3rd Strike. You pick…
-(N) Elena
-(N) Necro
-(N) Akuma
-Ah, the nimble, ashy, and powerful Necro. An undefeatable choice! (press any key)
-After getting rolled around by the Japanese players crowding the servers at this time of morning, you decide to play your Trump card and pee on your router. Doesn't really count as a rage quit, does it?
+
 Secret option: Capcom = Ken
 Kakkate kina! Those rough feet aren’t just for show. You sweep five people back to back before triumphantly returning to your morning routine. Great job!
 After this thrilling start to the day, you decide to continue this streak of pampering. That's when you get up and:
@@ -185,19 +181,31 @@ public class nameless{
 				
 
 			}
-/*
+			//(3)Play Game
+			else if (input.equals("3")){
+				System.out.println("You climb out of bed and rush to the\n" +
+								   "living room to play Street Fighter III 3rd Strike.\n" + 
+								   "You pick…\t(N) Elena\t(N) Necro\t(N) Akuma");
+				input = read.nextLine();
 
-You climb out of bed and rush to the living room to play Street Fighter III 3rd Strike. You pick…
-(N) Elena
-(N) Necro
-(N) Akuma
-Ah, the nimble, ashy, and powerful Necro. An undefeatable choice! (press any key)
-After getting rolled around by the Japanese players crowding the servers at this time of morning, you decide to play your Trump card and pee on your router. Doesn't really count as a rage quit, does it?
-Secret option: Capcom = Ken
-Kakkate kina! Those rough feet aren’t just for show. You sweep five people back to back before triumphantly returning to your morning routine. Great job!
-After this thrilling start to the day, you decide to continue this streak of pampering. That's when you get up and:
-
-*/
+				//(3a)Necro
+				if(input.equals("N") || input.equals("n"))
+					System.out.println("Ah, the nimble, ashy, and powerful Necro.\n" +
+									   "An undefeatable choice! (press any key) After getting\n" +
+									   "rolled around by the Japanese players crowding the servers\n" +
+									   "at this time of morning, you decide to play your Trump card\n" +
+									   "and pee on your router. Doesn't really count as a rage quit...\n" +
+									   "\n\ndoes it?");
+				//(3b)Secret Option : Capcom = Ken
+				else if (input.equals("Capcom") || input.equals("capcom"))
+					System.out.println("Kakkate kina! Those rough feet aren’t just for show!\n" +
+									   "You sweep five people back to back before triumphantly\n" +
+									   "returning to your morning routine. Great job!\n" +
+									   "After this thrilling start to the  day, you decide\n"+ 
+									   "to continue this streak of pampering. That's when you get up and: PRESS ANY KEY TO CONTINUE");
+					input = read.nextLine();
+			}
+			System.out.println("Thanks for playing!");
 
 	}
 }

@@ -198,14 +198,14 @@ public class nameless{
 									   "\n\ndoes it?");
 				//(3b)Secret Option : Capcom = Ken
 				else if (input.equals("Capcom") || input.equals("capcom"))
-					System.out.println("Kakkate kina! Those rough feet aren’t just for show!\n" +
+					System.out.println("Kakkate kina! Those rough feet aren\’t just for show!\n" +
 									   "You sweep five people back to back before triumphantly\n" +
 									   "returning to your morning routine. Great job!\n" +
 									   "After this thrilling start to the  day, you decide\n"+ 
 									   "to continue this streak of pampering. That's when you get up and: PRESS ANY KEY TO CONTINUE");
 					input = read.nextLine();
 			}
-			System.out.println("Thanks for playing!");
+			System.out.println("Thanks for playing! Version 2 coming soon!");
 
 	}
 }

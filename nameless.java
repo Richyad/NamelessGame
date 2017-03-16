@@ -21,6 +21,9 @@ Everywhere else, display a message before exiting the program
 		(3a)Necro
 		(3b)Ken
 
+3. Display Stage 2: Eyes on the orize
+
+
 After this thrilling start to the day, you decide to continue this streak of pampering. That's when you get up and:
 (M) Make pancakes
 You fire up the stove and proceed to create a delicious display of gluttonous glory.. A stack of seven pancakes, fried chicken, three bananas, a bowl of lucky charms, and a hot cup of tea to top it all off.
@@ -183,7 +186,7 @@ public class nameless{
 			else if (input.equals("3")){
 				System.out.println("You climb out of bed and rush to the\n" +
 								   "living room to play Street Fighter III 3rd Strike.\n" + 
-								   "You pick…\t(N) Elena\t(N) Necro\t(N) Akuma");
+								   "You pick...\t(N) Elena\t(N) Necro\t(N) Akuma");
 				input = read.nextLine();
 
 				//(3a)Necro
@@ -200,10 +203,14 @@ public class nameless{
 									   "You sweep five people back to back before triumphantly\n" +
 									   "returning to your morning routine. Great job!\n" +
 									   "After this thrilling start to the  day, you decide\n"+ 
-									   "to continue this streak of pampering. That's when you get up and: PRESS ANY KEY TO CONTINUE");
+									   "to continue this streak of pampering. That's when you get up and: PRESS ENTER TO CONTINUE");
 					input = read.nextLine();
 			}
-			System.out.println("Thanks for playing! Version 2 coming soon!");
+
+			//Version 2
+			System.out.print("\n\n\nAfter this thrilling start to the day, you decide to continue this streak of pampering.\n" + 
+							   "That's when you get up and:");
+
 
 	}
 }

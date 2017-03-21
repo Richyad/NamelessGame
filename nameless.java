@@ -20,8 +20,8 @@ Everywhere else, display a message before exiting the program
 	(3)Play game
 		(3a)Necro
 		(3b)Ken
-
-3. Display Stage 2: Eyes on the orize
+--------------------------------------------------------------------------------------------------------------------------------------------
+3. Display Stage 2: Eyes on the prize
 
 
 After this thrilling start to the day, you decide to continue this streak of pampering. That's when you get up and:
@@ -133,8 +133,9 @@ public class nameless{
 				System.out.print("You slide out of bed and saunter to the porcelain throne where you make " +
 								   "your daily deposit to the doo doo demons." +
 								   "\nUnforunately, your body is still " +
-								   "waking up so it's gonna be a while.\nINSERT A PAUSE HERE But we have places " +
-								   "to be and things to see!\nYou decide to...");
+								   "waking up so it's gonna be a while.");
+				read.nextLine();
+				System.out.print("But we have places to be and things to see!\nYou decide to...\n");
 				System.out.println("(P) Push\t(W) Wait\t");
 				input = read.nextLine();
 					//(2a)Push
@@ -208,8 +209,12 @@ public class nameless{
 			}
 
 			//Version 2
+			read.nextLine();
 			System.out.print("\n\n\nAfter this thrilling start to the day, you decide to continue this streak of pampering.\n" + 
-							   "That's when you get up and:");
+							   "That's when you get up and:\n\n");
+
+			System.out.print("(M) Make pancakes\t(J) Jerk the Gerkin\t");
+			input = read.nextLine();
 
 
 	}
